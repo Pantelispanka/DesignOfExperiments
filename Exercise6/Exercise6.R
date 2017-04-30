@@ -12,6 +12,6 @@ pharmacy.second.order.model <- rsm(y ~ FO(x1,x2,x3,x4,x5)+TWI(x1,x2,x3,x4,x5), d
 
 summary(pharmacy.second.order.model)
 
-pharmacy.second.order.model <- rsm(y ~ FO(x1,x2,x3,x4,x5), data = pharmacy.data)
+pharmacy.second.order.model <- rsm(y ~ SO(x1,x2,x3,x4,x5), data = pharmacy.data)
 
 steepest <- steepest(pharmacy.first.order.model, seq(0, 20 , by = 1))
